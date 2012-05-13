@@ -12,7 +12,7 @@ As the author of the article above notes, there are many libraries out there tha
 
 All that said, the goal of this plugin is to provide a clean and concise Perl style Hash implementation for the ImpactJS architecture.
 
-Simply include the plugin and create a '''javascript new pHash '''
+Simply include the plugin as 'plugin.phash' and create a 'new pHash' and an object will be created with the following functions:
 The available operations are:
 * set(key, value)
 * get(key)
@@ -22,5 +22,7 @@ The available operations are:
 * values()
 * each(fxn)
 * clear()
+
+The key-value pair will be stored as value = this.items[key].  There is also a this.len that tracks the size of the pHash.
 
 This is currrently used in PiSpace: http://www.clokwork.net/pispace
